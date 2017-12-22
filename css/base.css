@@ -163,9 +163,9 @@ main {
 /* Header */
 
 @media screen and (max-width: 55em) {
-	.message {
+	/*.message {
 		display: block;
-	}
+	}*/
 	.content {
 		flex-direction: column;
 		height: auto;
@@ -226,8 +226,7 @@ main {
 	.content__text {
 		position: relative;
 		right: auto;
-		top: auto;
-		font-size: 1.25em;
+		top: auto;		
 		padding: 0 1em;
 		text-align: center;
 	}
