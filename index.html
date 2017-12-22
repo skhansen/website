@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>skhansen</title>
+		<meta name="description" content="tech lead, headbanger and zombie aficionado" />		
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Arima Madurai" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="main loading">		
+		<main>
+			<div class="message">Sorry, your browser does not support clip-path on HTML elements!</div>
+			<div class="content">
+				<div class="glitch">
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+					<div class="glitch__img"></div>
+				</div>
+				<p class="content__text">skhansen</p>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script>
+			{
+				setTimeout(() => document.body.classList.add('render'), 60);
+				imagesLoaded('.glitch__img', { background: true }, () => {
+					document.body.classList.remove('loading');
+					document.body.classList.add('imgloaded');
+				});
+			}
+		</script>
+	</body>
+</html>
